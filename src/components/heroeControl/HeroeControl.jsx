@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroeControl = ({
   editHeroe,
@@ -10,6 +11,9 @@ const HeroeControl = ({
   updateHeroe
 }) => (
   <div className="controls">
+    <Link to={`/heroe-detail/${heroe.id}`} className="btn btn-link">
+      ver
+    </Link>
     {!heroe.isKill && (
       <button
         onClick={() => ringHeroe(heroe)}

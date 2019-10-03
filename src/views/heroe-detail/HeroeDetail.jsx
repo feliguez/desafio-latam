@@ -23,7 +23,6 @@ const HeroeDetail = ({ heroes, match }) => {
     <Container>
       <Row className="justify-content-md-center">
         <Col sm={4} className="text-left">
-          <Link to="/">← Volver</Link>
           <Card>
             {console.log(heroes)}
             <Card.Img variant="top" src={heroeItem.avatar} />
